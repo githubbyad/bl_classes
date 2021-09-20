@@ -34,6 +34,16 @@
         .navigation {
             display: none;
         }
+        
+        .blss {
+            color: white !important;
+            text-decoration: none !important;
+            background: #7952b3 !important;
+            display: inline-block !important;
+            padding: 0 10px !important;
+            border-radius: 20px !important;
+            margin-left: 10px;
+        }
     </style>
 </head>
 
@@ -41,8 +51,10 @@
 
     <div class="cheatsheet-main">
         <div class="cs-subheader">
-            <span>
+            <span style="font-size: 25px;">
                 List of BL Classes for Bootstrap - 5
+                <a class="blss" href="https://bulletlink.com/staff-aai-33033/layout.css" target="_blank" data-bs-toggle="tooltip" data-bs-html="true" title="Click to see Custom Bootstrap CSS">Bootstrap-custom.css</a>
+                
             </span>
         </div>
 
@@ -269,16 +281,20 @@
 
 
 
-    <script async=" " src="//www.google-analytics.com/analytics.js "></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous "></script>
-    <!-- <script src="/bootstrap-cheatsheet/node_modules/popper.js/dist/umd/popper.min.js "></script> -->
+    <script src="https://hackerthemes.com/bootstrap-cheatsheet/node_modules/popper.js/dist/umd/popper.min.js "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js " integrity="sha256-ifihHN6L/pNU1ZQikrAb7CnyMBvisKG3SUAab0F3kVU=" crossorigin=" anonymous "></script>
     <script src="https://hackerthemes.com/bootstrap-cheatsheet/js/cheatsheet.js?version=1.3 "></script>
 
-
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 
     <script>
         $(function() {
